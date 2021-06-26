@@ -6,14 +6,17 @@
 
 /* navbar styling */
 body{
+  .navbar.sticky {
+        background: rgb(32, 32, 32);
+        padding: 15px 0;
+    }
 .navbar{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background: rgba(78, 180, 184, 0.466);
-    box-shadow: -1px -1px 28px 4px  black;
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 13px 0;
+    transition: 0.4s;
+    padding: 27px 0;
     .max-width{
         max-width: 1300px;
         margin: 0 auto;
@@ -21,12 +24,11 @@ body{
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-
+       
     .logo {
-        a{
-            border: 3px solid black;
+        a{ 
             padding: 3px 5px ;
-            color: black;
+            color: white;
             font-size: 30px;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -44,9 +46,9 @@ body{
             display: inline-block;
             list-style: none;
             a{
-                color: black;
-                font-size: 18px;
-                font-weight: 500;
+                color: whitesmoke;
+                font-size: 20px;
+                font-weight: 600;
                 margin-left: 35px;
                 transition: color 0.3s ease;
                 text-decoration: none;
@@ -139,9 +141,8 @@ body{
             }
         }
 }
-  }
+}
 //   For all titles
-
 section{
     .title{
         position:relative;
@@ -392,6 +393,9 @@ section{
             margin-bottom: 30px;
             position: relative;
             overflow: hidden;
+             &:hover{
+                box-shadow: inset 29px 29px 29px 29px red;
+            }
             img{
                 display: flex;
                 justify-content: center;
@@ -417,8 +421,8 @@ section{
             &:hover img{
                 filter: blur(3px);
                 border-radius: 10px;
-                height: 450px;
-                width: 350px;
+                height: 430px;
+                width: 320px;
             }
             
             .layer{
@@ -426,8 +430,8 @@ section{
                 top: 0;
                 left: 0;
                 background: transparent;
-                height: 450px;
-                width: 350px;
+                height: 430px;
+                width: 320px;
                 border-radius: 10px;
                 z-index: 55;
                 h3{
