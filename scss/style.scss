@@ -26,6 +26,7 @@ body{
         justify-content: space-between;
        
     .logo {
+        
         a{ 
             padding: 3px 5px ;
             color: white;
@@ -212,6 +213,7 @@ section{
                     background-color: crimson;
                     text-decoration: none;
                     color: white;
+                    border: 1px solid crimson;
                     padding: 15px 30px;
                     margin-top: 20px;
                     border-radius: 5px;
@@ -379,8 +381,8 @@ section{
         .title{
             font-size: 30px;
             &::before{
-                background: crimson;
-                width: 80px;
+                background: black;
+                width: 90px;
             }
         }
     .max-width{
@@ -433,7 +435,7 @@ section{
                 height: 430px;
                 width: 320px;
                 border-radius: 10px;
-                z-index: 55;
+                z-index: 8;
                 h3{
                     position: absolute;
                     bottom: 0;
@@ -560,6 +562,7 @@ section{
                                 cursor: pointer;
                                 font-size: 19px;
                                 font-weight: 500;
+                                transition: 0.4s ease;
                                 &:hover{
                                     background: none;
                                     border: 2px solid rgb(130, 211, 238);
@@ -579,13 +582,46 @@ section{
         color: #fff;
         text-align: center;
         margin-top: 50px;
+        span
+        {
+            a{
+                color: crimson;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .icon{
+            margin-top: 10px;
+            a{
+                color: whitesmoke;
+                text-decoration: none;
+                font-size: 18px;
+                margin-left: 12px;
+                
+                transition: 0.4s ease;
+                &:hover{
+                    color: rgb(121, 35, 202);
+                }
+            }
+        }
+        .address{
+            margin-top: 15px;
+            a{
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: 0.4s ease;
+                &:hover{
+                    color: crimson;
+                }
+            }
+            p{
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
     }
-    footer span a{
-        color: crimson;
-        text-decoration: none;
-    }
-    footer span a:hover{
-        text-decoration: underline;
-    }
-    
 }
