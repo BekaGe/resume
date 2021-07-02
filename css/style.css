@@ -140,7 +140,7 @@ body section .title {
 
 body .about .max-width {
   max-width: 1320px;
-  min-width: 500px;
+  min-width: 550px;
   margin: 0 auto; }
   body .about .max-width .title::after {
     content: "Who I'm"; }
@@ -181,7 +181,7 @@ body .skills {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-width: 500px; }
+  min-width: 550px; }
   body .skills .title {
     color: black; }
     body .skills .title::before {
@@ -275,7 +275,7 @@ body .skills {
 body .banner {
   background: url("../img/bg.jpeg") no-repeat fixed;
   width: 100%;
-  min-width: 500px;
+  min-width: 550px;
   height: 300px;
   background-size: cover;
   margin-top: 100px; }
@@ -286,7 +286,7 @@ body .works {
   margin: auto;
   padding: 0; }
   body .works .title {
-    min-width: 500px;
+    min-width: 550px;
     font-size: 30px; }
     body .works .title::before {
       background: black;
@@ -390,7 +390,7 @@ body .contacts .title::before {
 
 body .contacts .max-width {
   max-width: 1320px;
-  min-width: 500px;
+  min-width: 550px;
   margin: 0 auto; }
   body .contacts .max-width .content {
     display: flex;

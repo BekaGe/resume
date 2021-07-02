@@ -12,6 +12,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <title>Document</title>
+    <script src="script.js"></script>
+    <script
+     type="text/javascript" 
+     src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_PThsKB1l84amxXMUQ9l6q");
+    })();
+    </script>
 </head>
 <body>
 <div class="header">
@@ -55,7 +65,7 @@
             <div class="right">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.
               </p>
-              <a href="#contact">CONTACT ME</a>
+              <a href="#contacts">CONTACT ME</a>
             </div>
         </div>
       </div>
@@ -149,12 +159,12 @@
                         </div>
                             <form >
                                 <div class="fields">
-                                        <input type="text" placeholder="Name" required>
-                                        <input type="text" placeholder="SurnName" required>
-                                        <input type="email" placeholder="E-mail" required>
-                                     <textarea name="text" id="" cols="30" rows="10" placeholder="Write Some Message.."></textarea>
+                                        <input type="text" id="toName" placeholder="Name" required>
+                                        <input type="text" id="fromName" placeholder="SurnName" required>
+                                         <input type="email" id="email" placeholder="E-mail" required>
+                                     <textarea name="text" id="msg" cols="30" rows="10" placeholder="Write Some Message.."></textarea>
                                     <div class="btn">
-                                        <button>Send</button>
+                                        <button onclick="sendMail()">Send</button>
                                     </div>
                                 </div>
                             </form>
@@ -165,19 +175,19 @@
             <!-- footer section -->
            
             <footer>
-                <span>Created By <a href="https://www.facebook.com/BeQaGigiberia/" target="_blank">BekaGigiberia</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
-                    <div class="icon">
-                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                </div>
+               
                 <address class="address">
                     <a href="tel: +(995) 568 98 25 01" title="Click to call">Mobile: +(995) 568 98 25 01</a></br>
                     <a href = "mailto: beqagigiberiaa@gmail.com" title="Click to Contact">E-mail: Beqagigiberiaa@gmail.com</a>
                     <p>Nutsubidze str.12 </br>
                     Tbilisi, Georgia</p>                   
                 </address>
-                
+                <div class="icon">
+                    <a href="https://www.facebook.com/BeQaGigiberia/"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://www.instagram.com/beqagigiberia/"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://github.com/BekaGe"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+                <span>Created By <a href="https://www.facebook.com/BeQaGigiberia/" target="_blank">BekaGigiberia</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>                
             </footer>
             
     <script src="style.js"></script>
