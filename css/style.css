@@ -297,7 +297,7 @@ body .works {
     justify-content: space-evenly;
     align-items: center;
     max-width: 1320px;
-    min-width: 550px; }
+    min-width: 600px; }
     body .works .max-width .work-col {
       border-radius: 10px;
       margin-bottom: 30px;
